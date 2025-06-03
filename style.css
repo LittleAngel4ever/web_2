@@ -1,0 +1,14 @@
+body
+{
+   background-color: #FFFFFF;
+   font-family: raleway;
+
+}
+.my-header
+{
+    background-color: #E1EDE6;
+}
+.production-info
+{
+    display: flex;
+}
