@@ -1,38 +1,40 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="assets/star-logo.svg" sizes="32x32" href="assets/favicon-32x32.svg">
-    <title>Ink. House</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="my-header">
-        <img src="assets/logo.svg" alt="logo">
-        <div>
-            <div class="my-header-nav">
-                <a href="#">Репродукции</a>
-                <a href="#">Новинки</a>
-                <a href="#">О нас</a>
+    <header class="header-flex container">
+        <div class="header-left">
+        <img src="assets/Ink-House.svg" alt="Logo" class="ink">
+            <div class="header-links">
+                <a href="#" class="repr">Репродукции</a>
+                <a href="#" class="novinki">Новинки</a>
+                <a href="#" class="nas">О Нас</a>
+                <a href="#" target="_blank"><img src="assets/cart.svg"></a>
             </div>
-            <button class="my-header-button"><img src="assets/cart.svg" alt="cart"></button>
         </div>
     </header>
-    <main class="my-main">
-        <section class="production">
-            <img src="assets/bird.svg" alt="bird">
-            <div class="production-info">
-                <h1>Реплики картин от Ink. House</h1>
-                <p>
-                    Высокое качество отрисовки на плотной бумаге или льняном 
-                    холсте. Редкие произведения, доступные цены.
+    <main>
+        <section class="bird">
+            <img src="assets/bird.svg" class="bird_img">
+            <div class="bird_all">
+                <h1 class="bird_h1">Реплики картин от Ink. House</h1>
+                <p class="bird_text">
+                    Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения, доступные цены.
                 </p>
-                <button>Продукция</button>
-            </div>
+                <button class="product">Продукция</button>
+            </div>    
         </section>
     </main>
-    <footer class="my-footer">
-
-    </footer>
 </body>
 </html>

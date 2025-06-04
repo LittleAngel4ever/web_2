@@ -1,14 +1,70 @@
-body
-{
-   background-color: #FFFFFF;
-   font-family: raleway;
-
+body{
+    font-family: "Inter", sans-serif;
+    color:#1F1F1F;
+    font-size: 15px;
 }
-.my-header
-{
+.container{
+    max-width: 1130px;
+    margin: 0 auto;
+}
+.header-flex{
     background-color: #E1EDE6;
-}
-.production-info
-{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    max-height: 100px;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+.header-links a{
+    display: inline;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    color: #2C2D35;
+}
+.repr{
+    padding-left: 495px;
+    padding-right: 60px;
+}
+.novinki{
+    padding-right: 60px;
+}
+.nas{
+    padding-right: 60px;
+}
+.ink{
+    padding: 33px 0 32px 165px;
+}
+.product{
+    padding: 21px 60px 21px 60px;
+    border-color:#598D66;
+    color:#598D66 ;
+    background: none;
+    font-size: 20px;
+    margin-top: 60px;
+}
+.bird_text{
+    max-width: 540px;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    color: #86928B;
+}
+.bird_h1{
+    font-size: 60px;
+    font-family: "Inter", sans-serif; 
+    margin-bottom: 20px;
+}
+.bird_all{
+    max-width: 540px;
+    padding: 145px 165px 145px 30px;
+}
+.bird{
+    display: flex;
+}
+.bird_img{
+    padding-left: 165px;
 }
