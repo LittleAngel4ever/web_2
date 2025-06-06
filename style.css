@@ -1,70 +1,90 @@
-body{
-    font-family: "Inter", sans-serif;
-    color:#1F1F1F;
-    font-size: 15px;
+:root
+{
+    --light-green-color: #E1EDE6;
+    --black-color: #2C2D35;
+    --font: "Raleway", sans-serif;
+    --main-font-size: 20px;
+    --green-color: #598D66;
+    --grey-color: #86928B;
+    --medium-font-size: ;
 }
-.container{
-    max-width: 1130px;
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: var(--font);
+    color: var(--black-color);
+}
+button
+{
+    font-family: var(--font);
+}
+.container
+{
     margin: 0 auto;
 }
-.header-flex{
-    background-color: #E1EDE6;
+@media (min-width: 1440px)
+{
+    .container
+    {
+        max-width: 1110px;
+    }
+    .about-title
+    {
+        font-size: 60px;
+    }
+}
+.header
+{
+    background-color: var(--light-green-color);
+}
+.header-flex
+{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1440px;
-    max-height: 100px;
+    padding: 33px 0 32px 0;
 }
-.header-left{
+.header-link
+{
+    color: var(--black-color);
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 60px;
+}
+.header-button::after
+{
+    content: url(assets/cart.svg);
+}
+.header-button
+{
+    background: none;
+    border: none;
+}
+.header-links
+{
     display: flex;
     align-items: center;
 }
-.header-links a{
-    display: inline;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: "Inter", sans-serif;
-    color: #2C2D35;
-}
-.repr{
-    padding-left: 495px;
-    padding-right: 60px;
-}
-.novinki{
-    padding-right: 60px;
-}
-.nas{
-    padding-right: 60px;
-}
-.ink{
-    padding: 33px 0 32px 165px;
-}
-.product{
-    padding: 21px 60px 21px 60px;
-    border-color:#598D66;
-    color:#598D66 ;
-    background: none;
-    font-size: 20px;
-    margin-top: 60px;
-}
-.bird_text{
-    max-width: 540px;
-    font-size: 18px;
-    font-family: "Inter", sans-serif;
-    color: #86928B;
-}
-.bird_h1{
-    font-size: 60px;
-    font-family: "Inter", sans-serif; 
-    margin-bottom: 20px;
-}
-.bird_all{
-    max-width: 540px;
-    padding: 145px 165px 145px 30px;
-}
-.bird{
+.about
+{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.bird_img{
-    padding-left: 165px;
+.about-title
+{
+    font-weight: 500;
+}
+.about-title span
+{
+    color: var(--green-color);
+}
+.about-text
+{
+    color: var(--grey-color);
+    font-size: var(--medium-font-size);
 }
