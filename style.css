@@ -6,7 +6,7 @@
     --main-font-size: 20px;
     --green-color: #598D66;
     --grey-color: #86928B;
-    --medium-font-size: ;
+    --medium-font-size: 18px;
 }
 *
 {
@@ -35,6 +35,14 @@ button
     .about-title
     {
         font-size: 60px;
+    }
+    .about-button
+    {
+        padding: 20px 60px;
+    }
+    .about-right
+    {
+        width: 540px;
     }
 }
 .header
@@ -87,4 +95,12 @@ button
 {
     color: var(--grey-color);
     font-size: var(--medium-font-size);
+    margin: 20px 0 60px 0;
+}
+.about-button
+{
+    color: var(--green-color);
+    font-size: var(--main-font-size);
+    border: 1px solid var(--green-color);
+    background: none;
 }
