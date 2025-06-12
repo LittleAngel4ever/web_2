@@ -7,6 +7,14 @@
     --green-color: #598D66;
     --grey-color: #86928B;
     --medium-font-size: 18px;
+    --medium-font-weight: 500; 
+    --medium-green-color: #D4E8D9;
+    --white-color: #F4F6F5;
+    --thirty-font-size: 30px;
+}
+html
+{
+    scroll-behavior: smooth;
 }
 *
 {
@@ -17,6 +25,7 @@ body
 {
     font-family: var(--font);
     color: var(--black-color);
+    font-weight: var(--medium-font-weight);
 }
 button
 {
@@ -44,6 +53,18 @@ button
     {
         width: 540px;
     }
+    h2
+    {
+        font-size: 40px;
+    }
+    .work-item
+    {
+        width: 310px;
+    }
+    .works-list
+    {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 .header
 {
@@ -60,7 +81,7 @@ button
 {
     color: var(--black-color);
     text-decoration: none;
-    font-weight: 500;
+
     margin-right: 60px;
 }
 .header-button::after
@@ -83,10 +104,6 @@ button
     justify-content: space-between;
     align-items: center;
 }
-.about-title
-{
-    font-weight: 500;
-}
 .about-title span
 {
     color: var(--green-color);
@@ -103,4 +120,66 @@ button
     font-size: var(--main-font-size);
     border: 1px solid var(--green-color);
     background: none;
+}
+.works-up
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.works-button
+{
+    color: var(--black-color);
+    background-color: var(--medium-green-color);
+    font-size: var(--main-font-size);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+}
+.works-button:nth-child(2)
+{
+    margin: 0 32px;
+}
+.works-button-active
+{
+    background-color: var(--green-color);
+    color: var(--white-color);
+}
+.work-item
+{
+    background-color: var(--light-green-color);
+    padding: 20px 20px 30px 20px;
+}
+.work-artist
+{
+    margin: 20px 0 10px 0;
+    font-size: var(--medium-font-size);
+    color: var(--grey-color);
+}
+.work-name
+{
+    font-size: var(--thirty-font-size);
+}
+.work-info
+{
+    font-size: var(--medium-font-size);
+    margin: 8px 0 30px;
+}
+.work-price
+{
+    color: var(--green-color);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.work-buy
+{
+    padding-left: 106.5px;
+    padding-right: 106.5px;
+}
+.works-list
+{
+    display: grid;
+    grid-gap: 30px;
+    margin-bottom: 70px;
 }
