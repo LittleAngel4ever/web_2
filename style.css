@@ -65,6 +65,28 @@ button
     {
         grid-template-columns: repeat(3, 1fr);
     }
+    .new-collection-title h2
+    {
+        width: 421px;
+    }
+    .new-collection-text
+    {
+        width: 540px;
+    }
+    .new-collection-button
+    {
+        padding: 20px 60px;
+    }
+    .team
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .team-info p
+    {
+        width: 635px;
+    }
 }
 .header
 {
@@ -182,4 +204,56 @@ button
     display: grid;
     grid-gap: 30px;
     margin-bottom: 70px;
+}
+#new-collection
+{
+    background-image: url(assets/monash-background.svg);
+    padding: 70px 0;
+}
+.new-collection-title
+{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.new-collection-title h2
+{
+    color: var(--white-color);
+    font-weight: var(--medium-font-weight);
+}
+.new-collection-text
+{
+    color: #FFFFFF;
+    font-size: var(--medium-font-size);
+    font-weight: var(--medium-font-weight);
+    margin-bottom: 30px;
+    line-height: 150%;
+}
+.new-collection-button
+{
+    margin-top: 30px;
+    background-color: #EEDB6D;
+    color: var(--black-color);
+    font-size: var(--main-font-size);
+    border: none;
+}
+.team-info h2
+{
+    font-weight: var(--medium-font-weight);
+    margin-bottom: 20px;
+} 
+.team-info p
+{
+    font-size: var(--medium-font-size);
+    font-weight: var(--medium-font-weight);
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+.team-image:nth-child(2)
+{
+    margin: 0 30px;
+}
+.team
+{
+    margin: 70px auto;
 }
